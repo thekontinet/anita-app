@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anita Shop - Products</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand">
+        <a class="nav-brand nav-link" href="#">LOGO</a>
+        <ul class="navbar-nav mx-auto">
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/shop.html">Shop</a></li>
+          <li><a class="nav-link" href="/courses.html">Courses</a></li>
+        </ul>
+
+        <a href="/cart.html" class="nav-link d-flex">
+          <i class="bi bi-bag-fill fs-4"></i>
+          <small class="badge bg-danger align-self-start" style="font-size: .6rem" data-bag-counter>2</small>
+        </a>
+      </nav>
+      <main class="py-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>Cart items</h1>
+            <span class="badge bg-danger"  data-bag-counter>10</span>
+        </div>
+        <div class="container">
+            <ul class="list-group" data-cart-container>
+                
+            </ul>
+            <form class="my-4 py-4">
+                <input type="text" class="form-control mb-2" placeholder="Enter Your Name">
+                <textarea class="form-control mb-2" placeholder="Enter delivery address"></textarea>
+                <button class="btn btn-primary">Checkout</button>
+            </form>
+            <ul>
+
+            </ul>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
